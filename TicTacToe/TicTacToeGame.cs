@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Games.AbstarctGame;
 
-namespace Games
+namespace Games.TicTacToe
 {
-    public class Game
+    public class TicTacToeGame : BaseGame
     {
         private Player _player1;
         private Player _player2;
         private Board _board;
 
-        public void StartGame()
+        public override void StartGame()
         {
             InitializePlayers();
             InitializeBoard();
@@ -40,7 +35,7 @@ namespace Games
 
                 PlayerMove(_player2);
                 i++;
-                Console.Clear(); // Clean the console
+                Console.Clear();
                 _board.PrintBoard();
 
                 if (Rules.HasWinner(_board))
@@ -129,8 +124,5 @@ namespace Games
         {
             _board = new Board();
         }
-
-
-
     }
 }

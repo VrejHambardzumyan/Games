@@ -1,6 +1,4 @@
-﻿
-
-namespace Games
+﻿namespace Games.TicTacToe
 {
     public class Board
     {

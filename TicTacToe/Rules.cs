@@ -1,4 +1,4 @@
-﻿namespace Games
+﻿namespace Games.TicTacToe
 {
     public static class Rules
     {
